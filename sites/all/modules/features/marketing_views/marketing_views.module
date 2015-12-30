@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Marketing Views feature.
+ */
+
+include_once 'marketing_views.features.inc';
