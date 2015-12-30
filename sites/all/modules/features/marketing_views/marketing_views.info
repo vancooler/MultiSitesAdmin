@@ -1,6 +1,6 @@
 name = Marketing Views
 core = 7.x
-package = Marketing
+package = Features
 version = 7.x-1.0
 dependencies[] = views
 dependencies[] = views_json

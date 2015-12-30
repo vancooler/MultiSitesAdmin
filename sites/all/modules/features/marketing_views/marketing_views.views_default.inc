@@ -84,13 +84,14 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
   $handler->display->display_options['fields']['title_1']['relationship'] = 'reverse_field_product_node';
-  $handler->display->display_options['fields']['title_1']['label'] = 'Webpage Title';
+  $handler->display->display_options['fields']['title_1']['label'] = 'WebpageTitle';
   $handler->display->display_options['fields']['title_1']['hide_empty'] = TRUE;
   /* Field: Content: Footer Text */
   $handler->display->display_options['fields']['field_footer_text']['id'] = 'field_footer_text';
   $handler->display->display_options['fields']['field_footer_text']['table'] = 'field_data_field_footer_text';
   $handler->display->display_options['fields']['field_footer_text']['field'] = 'field_footer_text';
   $handler->display->display_options['fields']['field_footer_text']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_footer_text']['label'] = 'FooterText';
   /* Field: Content: logo */
   $handler->display->display_options['fields']['field_logo_1']['id'] = 'field_logo_1';
   $handler->display->display_options['fields']['field_logo_1']['table'] = 'field_data_field_logo';
@@ -127,6 +128,7 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['fields']['postal_code']['table'] = 'location';
   $handler->display->display_options['fields']['postal_code']['field'] = 'postal_code';
   $handler->display->display_options['fields']['postal_code']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['postal_code']['label'] = 'PostalCode';
   $handler->display->display_options['fields']['postal_code']['hide_empty'] = TRUE;
   /* Field: Location: Province */
   $handler->display->display_options['fields']['province']['id'] = 'province';
@@ -147,12 +149,14 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['fields']['field_phone_number']['table'] = 'field_data_field_phone_number';
   $handler->display->display_options['fields']['field_phone_number']['field'] = 'field_phone_number';
   $handler->display->display_options['fields']['field_phone_number']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_phone_number']['label'] = 'PhoneNumber';
   $handler->display->display_options['fields']['field_phone_number']['hide_empty'] = TRUE;
   /* Field: Content: Support Email */
   $handler->display->display_options['fields']['field_support_email']['id'] = 'field_support_email';
   $handler->display->display_options['fields']['field_support_email']['table'] = 'field_data_field_support_email';
   $handler->display->display_options['fields']['field_support_email']['field'] = 'field_support_email';
   $handler->display->display_options['fields']['field_support_email']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_support_email']['label'] = 'SupportEmail';
   $handler->display->display_options['fields']['field_support_email']['hide_empty'] = TRUE;
   /* Sort criterion: Content: Product (field_product:delta) */
   $handler->display->display_options['sorts']['delta']['id'] = 'delta';
