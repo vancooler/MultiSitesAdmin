@@ -32,7 +32,7 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_json';
   $handler->display->display_options['style_options']['plaintext_output'] = 1;
-  $handler->display->display_options['style_options']['remove_newlines'] = 1;
+  $handler->display->display_options['style_options']['remove_newlines'] = 0;
   $handler->display->display_options['style_options']['jsonp_prefix'] = '';
   $handler->display->display_options['style_options']['using_views_api_mode'] = 0;
   $handler->display->display_options['style_options']['object_arrays'] = 0;
