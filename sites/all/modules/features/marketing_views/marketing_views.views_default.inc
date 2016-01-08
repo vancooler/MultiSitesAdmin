@@ -183,6 +183,68 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['fields']['field_companyname']['field'] = 'field_companyname';
   $handler->display->display_options['fields']['field_companyname']['relationship'] = 'reverse_field_product_node';
   $handler->display->display_options['fields']['field_companyname']['hide_empty'] = TRUE;
+  /* Field: Content: Ingredients */
+  $handler->display->display_options['fields']['field_ingredients']['id'] = 'field_ingredients';
+  $handler->display->display_options['fields']['field_ingredients']['table'] = 'field_data_field_ingredients';
+  $handler->display->display_options['fields']['field_ingredients']['field'] = 'field_ingredients';
+  $handler->display->display_options['fields']['field_ingredients']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ingredients']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ingredients']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Monthly Price */
+  $handler->display->display_options['fields']['field_monthly_price']['id'] = 'field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['table'] = 'field_data_field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['field'] = 'field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['label'] = 'MonthlyPrice';
+  $handler->display->display_options['fields']['field_monthly_price']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_monthly_price']['settings'] = array(
+    'thousand_separator' => '',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Shipping Id */
+  $handler->display->display_options['fields']['field_shipping_id']['id'] = 'field_shipping_id';
+  $handler->display->display_options['fields']['field_shipping_id']['table'] = 'field_data_field_shipping_id';
+  $handler->display->display_options['fields']['field_shipping_id']['field'] = 'field_shipping_id';
+  $handler->display->display_options['fields']['field_shipping_id']['label'] = 'ShippingId';
+  $handler->display->display_options['fields']['field_shipping_id']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_shipping_id']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Shipping Price */
+  $handler->display->display_options['fields']['field_shipping_price']['id'] = 'field_shipping_price';
+  $handler->display->display_options['fields']['field_shipping_price']['table'] = 'field_data_field_shipping_price';
+  $handler->display->display_options['fields']['field_shipping_price']['field'] = 'field_shipping_price';
+  $handler->display->display_options['fields']['field_shipping_price']['label'] = 'ShippingPrice';
+  $handler->display->display_options['fields']['field_shipping_price']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_shipping_price']['settings'] = array(
+    'thousand_separator' => '',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Terms and Conditions */
+  $handler->display->display_options['fields']['field_terms_and_conditions']['id'] = 'field_terms_and_conditions';
+  $handler->display->display_options['fields']['field_terms_and_conditions']['table'] = 'field_data_field_terms_and_conditions';
+  $handler->display->display_options['fields']['field_terms_and_conditions']['field'] = 'field_terms_and_conditions';
+  $handler->display->display_options['fields']['field_terms_and_conditions']['label'] = 'TermsAndConditions';
+  $handler->display->display_options['fields']['field_terms_and_conditions']['hide_empty'] = TRUE;
+  /* Field: Content: Trial Price */
+  $handler->display->display_options['fields']['field_trial_price']['id'] = 'field_trial_price';
+  $handler->display->display_options['fields']['field_trial_price']['table'] = 'field_data_field_trial_price';
+  $handler->display->display_options['fields']['field_trial_price']['field'] = 'field_trial_price';
+  $handler->display->display_options['fields']['field_trial_price']['label'] = 'TrialPrice';
+  $handler->display->display_options['fields']['field_trial_price']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_trial_price']['settings'] = array(
+    'thousand_separator' => '',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
   /* Sort criterion: Content: Product (field_product:delta) */
   $handler->display->display_options['sorts']['delta']['id'] = 'delta';
   $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_product';
