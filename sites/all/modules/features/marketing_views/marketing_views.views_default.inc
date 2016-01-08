@@ -158,6 +158,31 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['fields']['field_support_email']['relationship'] = 'reverse_field_product_node';
   $handler->display->display_options['fields']['field_support_email']['label'] = 'SupportEmail';
   $handler->display->display_options['fields']['field_support_email']['hide_empty'] = TRUE;
+  /* Field: Content: productId */
+  $handler->display->display_options['fields']['field_productid']['id'] = 'field_productid';
+  $handler->display->display_options['fields']['field_productid']['table'] = 'field_data_field_productid';
+  $handler->display->display_options['fields']['field_productid']['field'] = 'field_productid';
+  $handler->display->display_options['fields']['field_productid']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_productid']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: campaignId */
+  $handler->display->display_options['fields']['field_campaignid']['id'] = 'field_campaignid';
+  $handler->display->display_options['fields']['field_campaignid']['table'] = 'field_data_field_campaignid';
+  $handler->display->display_options['fields']['field_campaignid']['field'] = 'field_campaignid';
+  $handler->display->display_options['fields']['field_campaignid']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_campaignid']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_campaignid']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: companyName */
+  $handler->display->display_options['fields']['field_companyname']['id'] = 'field_companyname';
+  $handler->display->display_options['fields']['field_companyname']['table'] = 'field_data_field_companyname';
+  $handler->display->display_options['fields']['field_companyname']['field'] = 'field_companyname';
+  $handler->display->display_options['fields']['field_companyname']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_companyname']['hide_empty'] = TRUE;
   /* Sort criterion: Content: Product (field_product:delta) */
   $handler->display->display_options['sorts']['delta']['id'] = 'delta';
   $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_product';
