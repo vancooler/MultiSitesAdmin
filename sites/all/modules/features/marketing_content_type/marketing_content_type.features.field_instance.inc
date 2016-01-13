@@ -55,6 +55,105 @@ function marketing_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-product-field_banner_background_image'.
+  $field_instances['node-product-field_banner_background_image'] = array(
+    'bundle' => 'product',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_banner_background_image',
+    'label' => 'Banner Background Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 43,
+    ),
+  );
+
+  // Exported field_instance: 'node-product-field_banner_text_color'.
+  $field_instances['node-product-field_banner_text_color'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'colorfield',
+        'settings' => array(
+          'height' => 20,
+          'width' => 20,
+        ),
+        'type' => 'colorfield_color_swatch',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_banner_text_color',
+    'label' => 'Banner Text Color',
+    'required' => 0,
+    'settings' => array(
+      'colorfield_colorpicker_type' => 'farbtastic',
+      'colorfield_enable_colorpicker' => TRUE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'colorfield',
+      'settings' => array(
+        'colorfield_colorpicker_type' => 'farbtastic',
+        'colorfield_enable_colorpicker' => TRUE,
+        'colorfield_options' => array(
+          'colorfield_colorpicker_type' => 'farbtastic',
+          'colorfield_enable_colorpicker' => 1,
+        ),
+      ),
+      'type' => 'colorfield_unified_textfield',
+      'weight' => 44,
+    ),
+  );
+
   // Exported field_instance: 'node-product-field_image'.
   $field_instances['node-product-field_image'] = array(
     'bundle' => 'product',
@@ -477,6 +576,46 @@ function marketing_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-web_page-field_button_text'.
+  $field_instances['node-web_page-field_button_text'] = array(
+    'bundle' => 'web_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_button_text',
+    'label' => 'Button Text',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 36,
+    ),
+  );
+
   // Exported field_instance: 'node-web_page-field_campaignid'.
   $field_instances['node-web_page-field_campaignid'] = array(
     'bundle' => 'web_page',
@@ -605,6 +744,46 @@ function marketing_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-web_page-field_header_text'.
+  $field_instances['node-web_page-field_header_text'] = array(
+    'bundle' => 'web_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_header_text',
+    'label' => 'Header Text',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 37,
+    ),
+  );
+
   // Exported field_instance: 'node-web_page-field_logo'.
   $field_instances['node-web_page-field_logo'] = array(
     'bundle' => 'web_page',
@@ -691,6 +870,48 @@ function marketing_content_type_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => -1,
+    ),
+  );
+
+  // Exported field_instance: 'node-web_page-field_privacy_policy'.
+  $field_instances['node-web_page-field_privacy_policy'] = array(
+    'bundle' => 'web_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_privacy_policy',
+    'label' => 'Privacy Policy',
+    'required' => 0,
+    'settings' => array(
+      'display_summary' => 0,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 38,
     ),
   );
 
@@ -783,6 +1004,55 @@ function marketing_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-web_page-field_theme_color'.
+  $field_instances['node-web_page-field_theme_color'] = array(
+    'bundle' => 'web_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'colorfield',
+        'settings' => array(
+          'height' => 20,
+          'width' => 20,
+        ),
+        'type' => 'colorfield_color_swatch',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_theme_color',
+    'label' => 'Theme Color',
+    'required' => 0,
+    'settings' => array(
+      'colorfield_colorpicker_type' => 'farbtastic',
+      'colorfield_enable_colorpicker' => TRUE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'colorfield',
+      'settings' => array(
+        'colorfield_colorpicker_type' => 'farbtastic',
+        'colorfield_enable_colorpicker' => TRUE,
+        'colorfield_options' => array(
+          'colorfield_colorpicker_type' => 'farbtastic',
+          'colorfield_enable_colorpicker' => 1,
+        ),
+      ),
+      'type' => 'colorfield_unified_textfield',
+      'weight' => 35,
+    ),
+  );
+
   // Exported field_instance: 'node-web_page-field_url'.
   $field_instances['node-web_page-field_url'] = array(
     'bundle' => 'web_page',
@@ -825,17 +1095,23 @@ function marketing_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Banner Background Image');
+  t('Banner Text Color');
+  t('Button Text');
   t('Description');
   t('Footer Text');
+  t('Header Text');
   t('Image');
   t('Ingredients');
   t('Monthly Price');
   t('Phone Number');
+  t('Privacy Policy');
   t('Product');
   t('Shipping Id');
   t('Shipping Price');
   t('Support Email');
   t('Terms and Conditions');
+  t('Theme Color');
   t('Trial Price');
   t('URL');
   t('campaignId');
