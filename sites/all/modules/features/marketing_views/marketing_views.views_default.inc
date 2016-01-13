@@ -88,6 +88,7 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['fields']['title_1']['relationship'] = 'reverse_field_product_node';
   $handler->display->display_options['fields']['title_1']['label'] = 'WebpageTitle';
   $handler->display->display_options['fields']['title_1']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
   /* Field: Content: Footer Text */
   $handler->display->display_options['fields']['field_footer_text']['id'] = 'field_footer_text';
   $handler->display->display_options['fields']['field_footer_text']['table'] = 'field_data_field_footer_text';
