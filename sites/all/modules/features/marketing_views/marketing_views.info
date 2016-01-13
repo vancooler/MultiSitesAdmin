@@ -1,7 +1,7 @@
 name = Marketing Views
 core = 7.x
 package = Marketing
-version = 7.x-1.3
+version = 7.x-1.4
 dependencies[] = views
 dependencies[] = views_json
 features[ctools][] = views:views_default:3.0
