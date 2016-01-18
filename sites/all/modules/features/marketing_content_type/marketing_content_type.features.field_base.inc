@@ -53,25 +53,6 @@ function marketing_content_type_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_banner_text_color'.
-  $field_bases['field_banner_text_color'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_banner_text_color',
-    'indexes' => array(
-      'rgb' => array(
-        0 => 'rgb',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'colorfield',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'colorfield',
-  );
-
   // Exported field_base: 'field_button_text'.
   $field_bases['field_button_text'] = array(
     'active' => 1,

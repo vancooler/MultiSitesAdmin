@@ -105,55 +105,6 @@ function marketing_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-field_banner_text_color'.
-  $field_instances['node-product-field_banner_text_color'] = array(
-    'bundle' => 'product',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'colorfield',
-        'settings' => array(
-          'height' => 20,
-          'width' => 20,
-        ),
-        'type' => 'colorfield_color_swatch',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_banner_text_color',
-    'label' => 'Banner Text Color',
-    'required' => 0,
-    'settings' => array(
-      'colorfield_colorpicker_type' => 'farbtastic',
-      'colorfield_enable_colorpicker' => TRUE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'colorfield',
-      'settings' => array(
-        'colorfield_colorpicker_type' => 'farbtastic',
-        'colorfield_enable_colorpicker' => TRUE,
-        'colorfield_options' => array(
-          'colorfield_colorpicker_type' => 'farbtastic',
-          'colorfield_enable_colorpicker' => 1,
-        ),
-      ),
-      'type' => 'colorfield_unified_textfield',
-      'weight' => 44,
-    ),
-  );
-
   // Exported field_instance: 'node-product-field_image'.
   $field_instances['node-product-field_image'] = array(
     'bundle' => 'product',
@@ -1195,7 +1146,6 @@ function marketing_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Banner Image');
-  t('Banner Text Color');
   t('Button Text');
   t('Description');
   t('Footer Text');
