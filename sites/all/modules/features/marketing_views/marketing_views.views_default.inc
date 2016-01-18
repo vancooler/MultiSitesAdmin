@@ -248,6 +248,48 @@ function marketing_views_views_default_views() {
     'scale' => '2',
     'prefix_suffix' => 1,
   );
+  /* Field: Content: Banner Text Color */
+  $handler->display->display_options['fields']['field_banner_text_color']['id'] = 'field_banner_text_color';
+  $handler->display->display_options['fields']['field_banner_text_color']['table'] = 'field_data_field_banner_text_color';
+  $handler->display->display_options['fields']['field_banner_text_color']['field'] = 'field_banner_text_color';
+  $handler->display->display_options['fields']['field_banner_text_color']['label'] = 'BannerTextColor';
+  $handler->display->display_options['fields']['field_banner_text_color']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_banner_text_color']['type'] = 'colorfield_raw_rgb';
+  $handler->display->display_options['fields']['field_banner_text_color']['settings'] = array(
+    'display_hash' => 1,
+  );
+  /* Field: Content: Button Text */
+  $handler->display->display_options['fields']['field_button_text']['id'] = 'field_button_text';
+  $handler->display->display_options['fields']['field_button_text']['table'] = 'field_data_field_button_text';
+  $handler->display->display_options['fields']['field_button_text']['field'] = 'field_button_text';
+  $handler->display->display_options['fields']['field_button_text']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_button_text']['label'] = 'ButtonText';
+  $handler->display->display_options['fields']['field_button_text']['hide_empty'] = TRUE;
+  /* Field: Content: Privacy Policy */
+  $handler->display->display_options['fields']['field_privacy_policy']['id'] = 'field_privacy_policy';
+  $handler->display->display_options['fields']['field_privacy_policy']['table'] = 'field_data_field_privacy_policy';
+  $handler->display->display_options['fields']['field_privacy_policy']['field'] = 'field_privacy_policy';
+  $handler->display->display_options['fields']['field_privacy_policy']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_privacy_policy']['label'] = 'PrivacyPolicy';
+  $handler->display->display_options['fields']['field_privacy_policy']['hide_empty'] = TRUE;
+  /* Field: Content: Theme Color */
+  $handler->display->display_options['fields']['field_theme_color']['id'] = 'field_theme_color';
+  $handler->display->display_options['fields']['field_theme_color']['table'] = 'field_data_field_theme_color';
+  $handler->display->display_options['fields']['field_theme_color']['field'] = 'field_theme_color';
+  $handler->display->display_options['fields']['field_theme_color']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_theme_color']['label'] = 'ThemeColor';
+  $handler->display->display_options['fields']['field_theme_color']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_theme_color']['type'] = 'colorfield_raw_rgb';
+  $handler->display->display_options['fields']['field_theme_color']['settings'] = array(
+    'display_hash' => 1,
+  );
+  /* Field: Content: Header Text */
+  $handler->display->display_options['fields']['field_header_text']['id'] = 'field_header_text';
+  $handler->display->display_options['fields']['field_header_text']['table'] = 'field_data_field_header_text';
+  $handler->display->display_options['fields']['field_header_text']['field'] = 'field_header_text';
+  $handler->display->display_options['fields']['field_header_text']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_header_text']['label'] = 'HeaderText';
+  $handler->display->display_options['fields']['field_header_text']['hide_empty'] = TRUE;
   /* Sort criterion: Content: Product (field_product:delta) */
   $handler->display->display_options['sorts']['delta']['id'] = 'delta';
   $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_product';
