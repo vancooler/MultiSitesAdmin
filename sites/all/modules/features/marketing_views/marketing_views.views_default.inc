@@ -248,16 +248,6 @@ function marketing_views_views_default_views() {
     'scale' => '2',
     'prefix_suffix' => 1,
   );
-  /* Field: Content: Banner Text Color */
-  $handler->display->display_options['fields']['field_banner_text_color']['id'] = 'field_banner_text_color';
-  $handler->display->display_options['fields']['field_banner_text_color']['table'] = 'field_data_field_banner_text_color';
-  $handler->display->display_options['fields']['field_banner_text_color']['field'] = 'field_banner_text_color';
-  $handler->display->display_options['fields']['field_banner_text_color']['label'] = 'BannerTextColor';
-  $handler->display->display_options['fields']['field_banner_text_color']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_banner_text_color']['type'] = 'colorfield_raw_rgb';
-  $handler->display->display_options['fields']['field_banner_text_color']['settings'] = array(
-    'display_hash' => 1,
-  );
   /* Field: Content: Button Text */
   $handler->display->display_options['fields']['field_button_text']['id'] = 'field_button_text';
   $handler->display->display_options['fields']['field_button_text']['table'] = 'field_data_field_button_text';
@@ -290,6 +280,40 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['fields']['field_header_text']['relationship'] = 'reverse_field_product_node';
   $handler->display->display_options['fields']['field_header_text']['label'] = 'HeaderText';
   $handler->display->display_options['fields']['field_header_text']['hide_empty'] = TRUE;
+  /* Field: Content: Banner Image */
+  $handler->display->display_options['fields']['field_banner_background_image']['id'] = 'field_banner_background_image';
+  $handler->display->display_options['fields']['field_banner_background_image']['table'] = 'field_data_field_banner_background_image';
+  $handler->display->display_options['fields']['field_banner_background_image']['field'] = 'field_banner_background_image';
+  $handler->display->display_options['fields']['field_banner_background_image']['label'] = 'BannerImage';
+  $handler->display->display_options['fields']['field_banner_background_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_banner_background_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_banner_background_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Main Background Image */
+  $handler->display->display_options['fields']['field_main_background_image']['id'] = 'field_main_background_image';
+  $handler->display->display_options['fields']['field_main_background_image']['table'] = 'field_data_field_main_background_image';
+  $handler->display->display_options['fields']['field_main_background_image']['field'] = 'field_main_background_image';
+  $handler->display->display_options['fields']['field_main_background_image']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_main_background_image']['label'] = 'MainBackgroundImage';
+  $handler->display->display_options['fields']['field_main_background_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_main_background_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_main_background_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Product Box Color */
+  $handler->display->display_options['fields']['field_product_box_color']['id'] = 'field_product_box_color';
+  $handler->display->display_options['fields']['field_product_box_color']['table'] = 'field_data_field_product_box_color';
+  $handler->display->display_options['fields']['field_product_box_color']['field'] = 'field_product_box_color';
+  $handler->display->display_options['fields']['field_product_box_color']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_product_box_color']['label'] = 'ProductBoxColor';
+  $handler->display->display_options['fields']['field_product_box_color']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_product_box_color']['type'] = 'colorfield_raw_rgb';
+  $handler->display->display_options['fields']['field_product_box_color']['settings'] = array(
+    'display_hash' => 1,
+  );
   /* Sort criterion: Content: Product (field_product:delta) */
   $handler->display->display_options['sorts']['delta']['id'] = 'delta';
   $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_product';
