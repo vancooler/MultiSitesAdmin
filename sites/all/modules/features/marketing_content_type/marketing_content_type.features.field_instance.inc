@@ -80,7 +80,7 @@ function marketing_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_banner_background_image',
-    'label' => 'Banner Background Image',
+    'label' => 'Banner Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -834,6 +834,56 @@ function marketing_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-web_page-field_main_background_image'.
+  $field_instances['node-web_page-field_main_background_image'] = array(
+    'bundle' => 'web_page',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_main_background_image',
+    'label' => 'Main Background Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 39,
+    ),
+  );
+
   // Exported field_instance: 'node-web_page-field_phone_number'.
   $field_instances['node-web_page-field_phone_number'] = array(
     'bundle' => 'web_page',
@@ -961,6 +1011,55 @@ function marketing_content_type_field_default_field_instances() {
       ),
       'type' => 'inline_entity_form',
       'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'node-web_page-field_product_box_color'.
+  $field_instances['node-web_page-field_product_box_color'] = array(
+    'bundle' => 'web_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'colorfield',
+        'settings' => array(
+          'height' => 20,
+          'width' => 20,
+        ),
+        'type' => 'colorfield_color_swatch',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_product_box_color',
+    'label' => 'Product Box Color',
+    'required' => 0,
+    'settings' => array(
+      'colorfield_colorpicker_type' => 'farbtastic',
+      'colorfield_enable_colorpicker' => TRUE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'colorfield',
+      'settings' => array(
+        'colorfield_colorpicker_type' => 'farbtastic',
+        'colorfield_enable_colorpicker' => TRUE,
+        'colorfield_options' => array(
+          'colorfield_colorpicker_type' => 'farbtastic',
+          'colorfield_enable_colorpicker' => 1,
+        ),
+      ),
+      'type' => 'colorfield_unified_textfield',
+      'weight' => 40,
     ),
   );
 
@@ -1095,7 +1194,7 @@ function marketing_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Banner Background Image');
+  t('Banner Image');
   t('Banner Text Color');
   t('Button Text');
   t('Description');
@@ -1103,10 +1202,12 @@ function marketing_content_type_field_default_field_instances() {
   t('Header Text');
   t('Image');
   t('Ingredients');
+  t('Main Background Image');
   t('Monthly Price');
   t('Phone Number');
   t('Privacy Policy');
   t('Product');
+  t('Product Box Color');
   t('Shipping Id');
   t('Shipping Price');
   t('Support Email');
