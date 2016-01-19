@@ -314,6 +314,17 @@ function marketing_views_views_default_views() {
   $handler->display->display_options['fields']['field_product_box_color']['settings'] = array(
     'display_hash' => 1,
   );
+  /* Field: Content: Theme Hover Color */
+  $handler->display->display_options['fields']['field_theme_hover_color']['id'] = 'field_theme_hover_color';
+  $handler->display->display_options['fields']['field_theme_hover_color']['table'] = 'field_data_field_theme_hover_color';
+  $handler->display->display_options['fields']['field_theme_hover_color']['field'] = 'field_theme_hover_color';
+  $handler->display->display_options['fields']['field_theme_hover_color']['relationship'] = 'reverse_field_product_node';
+  $handler->display->display_options['fields']['field_theme_hover_color']['label'] = 'ThemeHoverColor';
+  $handler->display->display_options['fields']['field_theme_hover_color']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_theme_hover_color']['type'] = 'colorfield_raw_rgb';
+  $handler->display->display_options['fields']['field_theme_hover_color']['settings'] = array(
+    'display_hash' => 1,
+  );
   /* Sort criterion: Content: Product (field_product:delta) */
   $handler->display->display_options['sorts']['delta']['id'] = 'delta';
   $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_product';
