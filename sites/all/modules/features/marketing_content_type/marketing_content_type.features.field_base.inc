@@ -459,6 +459,25 @@ function marketing_content_type_field_default_field_bases() {
     'type' => 'colorfield',
   );
 
+  // Exported field_base: 'field_theme_hover_color'.
+  $field_bases['field_theme_hover_color'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_theme_hover_color',
+    'indexes' => array(
+      'rgb' => array(
+        0 => 'rgb',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'colorfield',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'colorfield',
+  );
+
   // Exported field_base: 'field_trial_price'.
   $field_bases['field_trial_price'] = array(
     'active' => 1,

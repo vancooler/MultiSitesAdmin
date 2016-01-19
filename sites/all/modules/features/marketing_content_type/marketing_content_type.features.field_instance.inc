@@ -563,7 +563,7 @@ function marketing_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 10,
     ),
   );
 
@@ -609,7 +609,7 @@ function marketing_content_type_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 33,
+      'weight' => 8,
     ),
   );
 
@@ -649,7 +649,7 @@ function marketing_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 34,
+      'weight' => 9,
     ),
   );
 
@@ -691,7 +691,7 @@ function marketing_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 6,
     ),
   );
 
@@ -731,7 +731,7 @@ function marketing_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 37,
+      'weight' => 11,
     ),
   );
 
@@ -781,7 +781,7 @@ function marketing_content_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 0,
+      'weight' => 4,
     ),
   );
 
@@ -831,7 +831,7 @@ function marketing_content_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 39,
+      'weight' => 13,
     ),
   );
 
@@ -870,7 +870,7 @@ function marketing_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -1,
+      'weight' => 3,
     ),
   );
 
@@ -912,7 +912,7 @@ function marketing_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 38,
+      'weight' => 12,
     ),
   );
 
@@ -961,7 +961,7 @@ function marketing_content_type_field_default_field_instances() {
         ),
       ),
       'type' => 'inline_entity_form',
-      'weight' => 32,
+      'weight' => 7,
     ),
   );
 
@@ -1010,7 +1010,7 @@ function marketing_content_type_field_default_field_instances() {
         ),
       ),
       'type' => 'colorfield_unified_textfield',
-      'weight' => 40,
+      'weight' => 16,
     ),
   );
 
@@ -1050,7 +1050,7 @@ function marketing_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -2,
+      'weight' => 2,
     ),
   );
 
@@ -1099,7 +1099,56 @@ function marketing_content_type_field_default_field_instances() {
         ),
       ),
       'type' => 'colorfield_unified_textfield',
-      'weight' => 35,
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-web_page-field_theme_hover_color'.
+  $field_instances['node-web_page-field_theme_hover_color'] = array(
+    'bundle' => 'web_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'colorfield',
+        'settings' => array(
+          'height' => 20,
+          'width' => 20,
+        ),
+        'type' => 'colorfield_color_swatch',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_theme_hover_color',
+    'label' => 'Theme Hover Color',
+    'required' => 0,
+    'settings' => array(
+      'colorfield_colorpicker_type' => 'farbtastic',
+      'colorfield_enable_colorpicker' => TRUE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'colorfield',
+      'settings' => array(
+        'colorfield_colorpicker_type' => 'farbtastic',
+        'colorfield_enable_colorpicker' => TRUE,
+        'colorfield_options' => array(
+          'colorfield_colorpicker_type' => 'farbtastic',
+          'colorfield_enable_colorpicker' => 1,
+        ),
+      ),
+      'type' => 'colorfield_unified_textfield',
+      'weight' => 15,
     ),
   );
 
@@ -1139,7 +1188,7 @@ function marketing_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -3,
+      'weight' => 1,
     ),
   );
 
@@ -1163,6 +1212,7 @@ function marketing_content_type_field_default_field_instances() {
   t('Support Email');
   t('Terms and Conditions');
   t('Theme Color');
+  t('Theme Hover Color');
   t('Trial Price');
   t('URL');
   t('campaignId');
